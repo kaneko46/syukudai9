@@ -24,7 +24,7 @@
     justify-content: space-between;
     border: solid 3px #54bbbe;
     border-radius: 35px;
-    margin: 60px 550px 0 550px;
+    margin: 100px 550px 0 550px;
     padding: 3px 30px 3px 100px;
     text-decoration: none;
 }
@@ -43,7 +43,6 @@
 
 /*========= ローディング画面のためのCSS ===============*/
 /*========= 画面遷移のためのCSS ===============*/
-
 
 /*右に消えるエリア*/
 body.appear .splashbg1{
@@ -128,5 +127,27 @@ body.appear #container{
 	}
 	100% {
 	opacity: 1;
+}
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width:1024px) {
+    
+
+/* ４０４タイトル */
+.title h1 {
+    font-size: 2rem;
+}
+
+/* テキスト */
+.text {
+    border-top: solid 1px #d3d3d3;
+    padding: 80px 34px 0 34px;
+}
+
+/* ボタン */
+.button {
+    margin: 100px 50px;
+    padding: 3px 30px 3px 80px;
 }
 }
